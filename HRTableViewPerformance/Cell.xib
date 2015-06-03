@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="151" id="rJ9-1E-zS3" customClass="Cell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="151"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rJ9-1E-zS3" id="gEi-q0-joh">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vB4-Fl-Gi1">
+                        <rect key="frame" x="8" y="8" width="304" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0r-gC-hT1">
+                        <rect key="frame" x="8" y="39" width="304" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="304" placeholderIntrinsicHeight="72" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLg-tg-fRx">
+                        <rect key="frame" x="8" y="70" width="304" height="72"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="C0r-gC-hT1" firstAttribute="trailing" secondItem="HLg-tg-fRx" secondAttribute="trailing" id="2ab-3j-pOL"/>
+                    <constraint firstItem="C0r-gC-hT1" firstAttribute="bottom" secondItem="HLg-tg-fRx" secondAttribute="bottom" constant="-31" id="8Jp-t5-tej"/>
+                    <constraint firstItem="vB4-Fl-Gi1" firstAttribute="top" secondItem="gEi-q0-joh" secondAttribute="top" constant="8" id="IBp-pc-fqB"/>
+                    <constraint firstItem="C0r-gC-hT1" firstAttribute="trailing" secondItem="vB4-Fl-Gi1" secondAttribute="trailing" id="Xky-lc-Vtn"/>
+                    <constraint firstItem="HLg-tg-fRx" firstAttribute="top" secondItem="C0r-gC-hT1" secondAttribute="bottom" constant="10" id="aL8-4f-eoW"/>
+                    <constraint firstAttribute="bottom" secondItem="HLg-tg-fRx" secondAttribute="bottom" constant="8" id="cHk-2j-fYW"/>
+                    <constraint firstItem="C0r-gC-hT1" firstAttribute="top" secondItem="vB4-Fl-Gi1" secondAttribute="bottom" constant="10" id="dOa-Ap-gkN"/>
+                    <constraint firstAttribute="trailing" secondItem="vB4-Fl-Gi1" secondAttribute="trailing" constant="8" id="db9-LR-boa"/>
+                    <constraint firstItem="vB4-Fl-Gi1" firstAttribute="leading" secondItem="gEi-q0-joh" secondAttribute="leading" constant="8" id="i4u-45-UXe"/>
+                    <constraint firstItem="C0r-gC-hT1" firstAttribute="leading" secondItem="HLg-tg-fRx" secondAttribute="leading" id="iiC-bm-bsj"/>
+                    <constraint firstItem="C0r-gC-hT1" firstAttribute="leading" secondItem="vB4-Fl-Gi1" secondAttribute="leading" id="vj7-EB-rWI"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="8Jp-t5-tej"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bottomLabel" destination="HLg-tg-fRx" id="DdN-dt-xIr"/>
+                <outlet property="bottomMargin" destination="cHk-2j-fYW" id="7Sf-3F-a6n"/>
+                <outlet property="middleBottomSpacing" destination="aL8-4f-eoW" id="VUX-2H-SfX"/>
+                <outlet property="middleLabel" destination="C0r-gC-hT1" id="Kwh-Fk-YvB"/>
+                <outlet property="topLabel" destination="vB4-Fl-Gi1" id="sMD-jz-9cK"/>
+                <outlet property="topMargin" destination="IBp-pc-fqB" id="7y5-pm-dlP"/>
+                <outlet property="topMiddleSpacing" destination="dOa-Ap-gkN" id="zpC-Pu-kwG"/>
+            </connections>
+            <point key="canvasLocation" x="197" y="416.5"/>
+        </tableViewCell>
+    </objects>
+</document>
